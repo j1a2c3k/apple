@@ -1,0 +1,85 @@
+body {
+  background-color: blanchedalmond;
+  background-image: url("../img/11.webp");
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+h1 {
+  color: rgb(57, 22, 182);
+  font-size: 300%;
+  text-align: center;
+  border: 20px solid rgb(92, 90, 88);
+}
+p {
+  text-align: center;
+  border: 4px solid powderblue;
+  padding: 10px;
+}
+
+.P1 {
+  font-size: 500%;
+  color: brown;
+}
+
+.P2 {
+  color: aqua;
+  font-size: 200%;
+}
+
+.note {
+  color: antiquewhite;
+  font-size: 150%;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+.section {
+  display: flex;
+}
+
+.side {
+  display: flex;
+  flex: 30%;
+  flex-direction: column;
+}
+
+/* Clear floats after the columns */
+.side > .side_img {
+  flex: 80%;
+}
+.side > .side_statements {
+  flex: 20%;
+  background-color: lightgreen;
+}
+.article {
+  flex: 70%;
+  font-size: 1vw;
+  background-color: #f1f1f1;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav,
+  article {
+    width: 100%;
+    height: auto;
+  }
+}
